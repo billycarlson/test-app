@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width" />
+<title>About Me</title>
+
+<script src="js/touchscroll.min.js"></script>
+
+<link rel="stylesheet" media="screen" href="css/shared.css">
+<link rel="stylesheet" media="screen" href="css/touchscroll.css">
+<link rel="stylesheet" media="all and (orientation:portrait)" href="css/portrait.css" />
+<link rel="stylesheet" media="all and (orientation:landscape)" href="css/landscape.css" />
+
+<script src="js/scripts.js"></script>
+</head>
+<body ontouchmove="touchMove(event);">
+  <section id="grid">
+
+<div class="box4x4">
+  <div class="posTL"></div><!-- Row 1, Box 1, Sub A -->
+  <div class="posTR" style="padding-left:10px"><img style="padding-top:8%" src="images/2006.png"></div><!-- Row 1, Box 1, Sub B -->
+  <div class="posBL horz" style="padding-left:10px"><a href="about.html"<img  style="padding-top:40%" src="images/experience.gif"></a></div><!-- Row 1, Box 1, Sub C -->
+  <div class="posBR"></div><!-- Row 1, Box 1, Sub D -->
+</div>
+<div class="box4x4">
+  <div class="posTL" style="background-color:#c63133"></div><!-- Row 1, Box 2, Sub A -->
+  <!-- Row 1, Box 2, Sub B  -->
+  <div class="posBL" style="padding-left:10px"><img style="padding-top:8%" src="images/2007.png"></div><!-- Row 1, Box 2, Sub C -->
+  <div class="posBR" style="padding-left:10px"><img style="padding-top:8%" src="images/2008.png"></div><!-- Row 1, Box 2, Sub D -->
+</div>
+
+<div class="box4x4">
+  <div class="posTL"> </div><!-- Row 2, Box 1, Sub A -->
+   <div class="posTR single" style="background-color:#b22e43; padding-left:10px"><img style="padding-top:8%" src="images/2009.png"></div><!-- Row 2, Box 1, Sub B -->
+   <div class="posBL" style="padding-left:10px"><img style="padding-top:8%"  src="images/2010.png"></div><!-- Row 2, Box 1, Sub C -->
+  <div class="posBR"></div><!-- Row 2, Box 1, Sub D -->
+</div>
+<div class="box4x4">
+  <div class="posTL"></div><!-- Row 2, Box 2, Sub A -->
+   <div class="posTR"></div><!-- Row 2, Box 2, Sub B -->
+   <div class="posBL" style="background-color:#c63133; padding-left:10px"><img style="padding-top:8%" src="images/2011.png"></div><!-- Row 2, Box 2, Sub C -->
+  <div class="posBR"></div><!-- Row 2, Box 2, Sub D -->
+</div>
+
+<div>
+<p><a href="about.html">back</a></p>
+</div>
+
+<!-- 
+<div class="box4x4" style="">
+  <div class="posTL">home</div>
+</div>
+<div class="box4x4">
+  <div class="posTL">something here</div>
+  <div class="posTR">and something here</div>
+
+</div>
+ -->
+
+<!--
+<div class="box4x4">
+  <div class="posTL"></div>Row 4, Box 1, Sub A
+  <div class="posTR"></div>Row 4, Box 1, Sub B
+  <div class="posBL"></div>Row 4, Box 1, Sub C
+  <div class="posBR"></div>Row 4, Box 1, Sub D
+</div>
+<div class="box4x4">
+  <div class="posTL"></div>Row 4, Box 2, Sub A
+  <div class="posTR"></div>Row 4, Box 2, Sub B
+  <div class="posBL"></div>Row 4, Box 2, Sub C
+  <div class="posBR"></div>Row 4, Box 2, Sub D
+</div>
+-->
+
+
+
+  </section>
+<footer></footer>
+<script>
+    var scroller = new TouchScroll(document.querySelector("#grid"), {elastic: true});
+</script>
+
+</body>
+</html>

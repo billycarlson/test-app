@@ -1,0 +1,69 @@
+#grid {
+  position: relative;
+  width: 1024px;
+  height: 560px;
+  overflow: hidden;	
+}
+
+#pageHold {
+  width: 1024px;
+  height: 645px;
+  overflow: hidden;
+}
+
+.box4x4 {
+  position: relative;
+  width: 510px;
+  height: 278px;
+  border: #e43f2d solid 1px;
+  float: left;
+}
+
+.box4x4 div {
+  position: absolute;
+  width: 256px;
+  height: 140px;	
+}
+
+.box4x4 a.single {
+  width: 254px;
+  height: 138px;	
+}
+.box4x4 a.horz {
+  width: 510px;
+  height: 138px;	
+}
+.box4x4 a.vert {
+  width: 254px;
+  height: 278px;	
+}
+
+#viewport {
+  position: relative;
+  width: 1024px;
+  height: 771px;
+  color: #fff;
+  margin: auto;
+  text-align: center;
+}
+
+#viewport div figure {
+	display: table-cell;
+	width: inherit;
+  height: 515px;
+  vertical-align: middle;
+  text-align: center;
+  overflow: hidden;
+}
+
+details {
+  position: absolute;
+  width: 512px;
+  height: 119px;
+  top: 516px;
+  right: 256px;
+  padding-top: 10px;
+  text-align: left;
+  background: #1A0904;
+  overflow: hidden;
+}

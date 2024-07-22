@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width" />
+<title>A World Wide Web of Interactivity</title>
+
+<script src="js/touchscroll.min.js"></script>
+
+<link rel="stylesheet" media="screen" href="css/shared.css">
+<link rel="stylesheet" media="screen" href="css/touchscroll.css">
+<link rel="stylesheet" media="all and (orientation:portrait)" href="css/portrait.css" />
+<link rel="stylesheet" media="all and (orientation:landscape)" href="css/landscape.css" />
+
+<script src="js/scripts.js"></script>
+</head>
+<body ontouchmove="touchMove(event);">
+  <section id="grid">
+
+<div class="box4x4">
+  <div class="posTL"></div><!-- Row 1, Box 1, Sub B -->
+  <a href="../work/hfma.html" class="posTR" style="overflow:hidden"><img src="images/hfma.jpg"></a><!-- Row 1, Box 1, Sub A -->
+  <div class="posBL"></div><!-- Row 1, Box 1, Sub C -->
+  <div class="posBR" style="overflow:hidden"><a href="#"><img src="images/cole.jpg"></a></div><!-- Row 1, Box 1, Sub D -->
+</div>
+<div class="box4x4">
+  <div class="posTL"></div><!-- Row 1, Box 2, Sub A -->
+  <div class="posTR"></div><!-- Row 1, Box 2, Sub B  -->
+  <a href="../work/" class="posBL" style="overflow:hidden"><img src="images/green4life3.jpg"></a>
+</div>
+
+<div class="box4x4">
+  <div class="posTL" style="overflow:hidden"><img src="images/uptown.jpg"></div><!-- Row 2, Box 1, Sub A -->
+   <div class="posTR"></div><!-- Row 2, Box 1, Sub B -->
+  <div class="posBL"></div><!-- Row 2, Box 1, Sub C -->
+  <div class="posBR" style="overflow:hidden"><a href="#"><img src="images/wedding.jpg"></a></div><!-- Row 2, Box 1, Sub D -->
+</div>
+<div class="box4x4">
+  <div class="posTL" style="background-color:#b22e43"><table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th scope="row"><img style="padding-left:10px" src="images/print-id.png"align="left" /></th>
+  </tr>
+</table></div><!-- Row 2, Box 2, Sub A -->
+   <div class="posTR"></div><!-- Row 2, Box 2, Sub B -->
+   <div class="posBL horiz"></div><!-- Row 2, Box 2, Sub C -->
+  <div class="posBR" style="overflow:hidden"><img src="images/uic2.jpg"></div><!-- Row 2, Box 2, Sub D -->
+</div>
+
+</div>
+
+
+
+
+
+  </section>
+<script>
+    var scroller = new TouchScroll(document.querySelector("#grid"), {elastic: true});
+</script>
+
+</body>
+</html>

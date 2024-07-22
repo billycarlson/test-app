@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width" />
+<title>Miscellaneous Graphic Works of Creativity</title>
+
+<script src="js/touchscroll.min.js"></script>
+
+<link rel="stylesheet" media="screen" href="css/shared.css">
+<link rel="stylesheet" media="screen" href="css/touchscroll.css">
+<link rel="stylesheet" media="all and (orientation:portrait)" href="css/portrait.css" />
+<link rel="stylesheet" media="all and (orientation:landscape)" href="css/landscape.css" />
+
+<script src="js/scripts.js"></script>
+</head>
+<body ontouchmove="touchMove(event);">
+  <section id="grid">
+
+
+<div class="box4x4">
+  <div class="posTL"></div><!-- Row 1, Box 1, Sub A -->
+  <div class="posTR"></div><!-- Row 1, Box 1, Sub B -->
+  <div class="posBL"></div><!-- Row 1, Box 1, Sub C -->
+  <div class="posBR"></div><!-- Row 1, Box 1, Sub D -->
+</div>
+<div class="box4x4">
+  <div class="posTL"></div><!-- Row 1, Box 2, Sub A -->
+  <a href="../work/page.html" class="posTR single">This is a Link</a><!-- Row 1, Box 2, Sub B  -->
+  <a href="../work/page.html" class="posBL horz">This is a Link</a><!-- Row 1, Box 2, Sub C -->
+  <div class="posBR"></div><!-- Row 1, Box 2, Sub D -->
+</div>
+
+<div class="box4x4">
+  <div class="posTL"></div><!-- Row 2, Box 1, Sub A -->
+   <a href="../work/page.html" class="posTR vert">This is a Link</a><!-- Row 2, Box 1, Sub B -->
+   <a href="../work/page.html" class="posBL single">This is a Link</a><!-- Row 2, Box 1, Sub C -->
+  <div class="posBR"></div><!-- Row 2, Box 1, Sub D -->
+</div>
+<div class="box4x4">
+  <div class="posTL"></div><!-- Row 2, Box 2, Sub A -->
+   <a href="../work/page.html" class="posTR vert">This is a Link</a><!-- Row 2, Box 2, Sub B -->
+   <a href="../work/page.html" class="posBL single">This is a Link</a><!-- Row 2, Box 2, Sub C -->
+  <div class="posBR"></div><!-- Row 2, Box 2, Sub D -->
+</div>
+
+
+
+<div class="box4x4">
+  <div class="posTL"></div><!--Row 3, Box 1, Sub A-->
+  <div class="posTR"></div><!--Row 3, Box 1, Sub B-->
+  <div class="posBL"></div><!--Row 3, Box 1, Sub C-->
+  <div class="posBR"></div><!--Row 3, Box 1, Sub D-->
+</div>
+<div class="box4x4">
+  <div class="posTL"></div><!--Row 3, Box 2, Sub A-->
+  <div class="posTR"></div><!--Row 3, Box 2, Sub B-->
+  <div class="posBL"></div><!--Row 3, Box 2, Sub C-->
+  <div class="posBR"></div><!--Row 3, Box 2, Sub D-->
+</div>
+<!--
+<div class="box4x4">
+  <div class="posTL"></div>Row 4, Box 1, Sub A
+  <div class="posTR"></div>Row 4, Box 1, Sub B
+  <div class="posBL"></div>Row 4, Box 1, Sub C
+  <div class="posBR"></div>Row 4, Box 1, Sub D
+</div>
+<div class="box4x4">
+  <div class="posTL"></div>Row 4, Box 2, Sub A
+  <div class="posTR"></div>Row 4, Box 2, Sub B
+  <div class="posBL"></div>Row 4, Box 2, Sub C
+  <div class="posBR"></div>Row 4, Box 2, Sub D
+</div>
+-->
+
+
+
+  </section>
+<footer></footer>
+<script>
+    var scroller = new TouchScroll(document.querySelector("#grid"), {elastic: true});
+</script>
+
+</body>
+</html>

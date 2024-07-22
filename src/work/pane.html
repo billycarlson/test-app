@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width" />
+<title>Pane Caldo website</title>
+<script src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+<script src="js/ios-scrollH.js"></script>
+
+<link rel="stylesheet" media="screen" href="css/shared.css">
+<link rel="stylesheet" media="all and (orientation:portrait)" href="css/portrait.css" />
+<link rel="stylesheet" media="all and (orientation:landscape)" href="css/landscape.css" />
+
+<script src="js/scripts.js"></script>
+
+</head>
+<body ontouchmove="touchMove(event);">
+<style>
+	body {
+	background-color: #000;
+	}
+</style>
+<header>
+Pane Caldo: <span id="page"></span>/4
+<a id="backBtn" href="../ipad/index.html" class="button"><span></span>Back</a>
+<a id="rightBtn" href="../ipad/index.html" class="button">Button</a>
+</header>
+
+  <section id="pageHold">
+
+<div id="viewport">
+  <div>
+    <figure><img src="images/pane2.jpg" width="768" height="515" alt="" /></figure>
+    <details>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare convallis sapien ac porta. Curabitur non dui et tellus vehicula accumsan! Pellentesque nulla est; dapibus vel adipiscing sit amet, dapibus in augue. Curabitur urna elit, porttitor at convallis id, feugiat at risus.</details>
+  </div>
+  <div>
+    <figure><img src="images/pane2.jpg" width="768" height="515" alt="" /></figure>
+    <details>Maximum image size is:<br />Width: 768 pixels<br />Height: 515 pixels<p>Bad things happen with larger images (especially height)</p></details>
+  </div>
+  <div>
+    <figure><img src="images/pane3.jpg" width="768" height="515" alt="" /></figure>
+        <details class="center">Small images will remain centered on the page. <p><a href="#" class="button">Button (For No Reason)</a></p></details>
+  </div>
+  <div>
+       <figure><img src="images/pane4.jpg" width="768" height="515" alt="" /></figure>
+    <details>To get around the size restrictions and to fill the screen, we can set the image as a background. This example is using a 1024 x 768 px image centered in the background. Rotating the iPad will show more of the height or width depending on the orientation.</details>
+  </div>
+</div>
+
+
+  </section>
+<div id="ftCoverL"></div>
+<div id="ftCoverR"></div>
+<footer></footer>
+<script>
+  $("#viewport").scrollpane({
+                    
+                    onscrollfinish: function(pos, page) {
+                        $("#page").text(page + 1);
+						
+						var pageNum = page;
+						$("#pageNum").text(pageNum);					
+                    }
+                });
+  $("#0").click(function() { $("#viewport").showpage(0); });
+  $("#1").click(function() { $("#viewport").showpage(1); });
+  $("#2").click(function() { $("#viewport").showpage(2); });
+  $("#3").click(function() { $("#viewport").showpage(3); });
+  $("#4").click(function() { $("#viewport").showpage(4); });
+</script>
+</body>
+</html>

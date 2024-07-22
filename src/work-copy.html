@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)http://www.alistapart.com/d/responsive-web-design/ex/ex-site-flexible.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<title>Carlson Design Company ::: Communication Design</title>
+
+<meta name="DC.language" content="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style type="text/css" media="screen, projection">
+.section:after,
+ul.nav:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent; }
+body { line-height:1; }
+ol,ul { list-style:none; }
+blockquote,q { quotes:none; }
+blockquote:before,blockquote:after,q:before,q:after { content:'';content:none; }
+ins { text-decoration:none; }
+del { text-decoration:line-through; }
+table { border-collapse:collapse;border-spacing:0; }
+
+body {
+	background: #E4E4E4 url("site/bg.png");
+	color: #292929;
+	color: rgba(0, 0, 0, 0.82);
+	font: normal 100% Cambria, Georgia, serif;
+	/* -moz-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	-webkit-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); */
+	-webkit-text-size-adjust: none;
+	background-color: #e43f2d;
+	background-image: url();
+}
+a {
+	color: #c63133;
+	text-decoration: none;
+	-moz-transition: 0.2s color linear;
+	-webkit-transition: 0.2s color linear;
+	transition: 0.2s color linear;
+	
+}
+a:hover {
+	color: #b22e43;
+	border-bottom:solid .15em;
+
+}
+#page {
+	background: url("site/rag.png") repeat-x;
+	padding: 1em 0 2em 0;
+}
+.inner {
+	margin: 0 auto;
+	width: 93.75%;		/* 960px / 1024px */
+}
+img {
+	max-width: 100%;
+}
+.amp {
+	font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+	font-style: italic;
+	font-weight: normal;
+}
+.mast {
+	float: left;
+	width: 23.875%;	/* 306px / 960px */
+}
+h1 {
+	background: url("site/logo-bg.png") no-repeat 50% 0;
+}
+h1 a {
+	padding-top: 117px;
+	height: 162px;
+	display: block;
+	text-align: center;
+}
+.intro,
+.main {
+	float: left;
+	width: 100%;	/* 633px / 960px */
+}
+
+.footer {
+	float:right;
+	width: 76.0%;
+}
+
+.intro {
+	margin-top: 1px;
+	padding-bottom:20px;
+}
+.intro div {
+	line-height: 1.4;
+}
+ul.nav {
+	border-top: 1px solid #888583;
+	margin: 2em auto 0;
+	width: 64.379%;
+}
+ul.nav a {
+	font: bold 14px/1.2 "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	display: block;
+	text-align: center;
+	letter-spacing: 0.1em;
+	padding: 1em 0.5em 3em;
+	margin-bottom: -1em;
+	text-transform: uppercase;
+}
+ul.nav a:hover {
+	background-position: 50% 100%;
+}
+li.first a {
+	border-top: 1px solid #FFF9EF;
+	padding-top: 1.25em;
+}
+ul.nav i {
+	font: normal 10px Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+	display: block;
+	letter-spacing: 0.05em;
+}
+.intro h2 {
+	font-size: 4em;
+	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight:bold;
+	color:#000000;
+}
+
+.main h2 {
+	background: url("site/ornament.png") no-repeat 0 50%;
+	font-size: 1.4em;
+	text-transform: lowercase;
+	text-align: center;
+	margin: 0.75em 0 1em;
+}
+.main h2 b {
+	background: url("site/bg.png");
+	font-weight: normal;
+	padding: 0 1em;
+}
+.figure {
+	float: left;
+	text-align: center;
+	width: 23.4375%;				/* 197px / 633px 31.121642969984202211% */
+}
+
+.figure img {
+	display: block;
+	margin: 0 auto;
+	overflow:hidden;
+}
+
+.figure img a {
+}
+
+li#f-mycroft,
+li#f-winter {
+	margin-right: 0;
+}
+.footer {
+	text-align: left;
+	font-size: 3em;
+	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight:bold;
+	color:#c63133;
+	padding: 10px 0 20px;
+}
+
+.footer p {
+	margin-bottom: 0.5em;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="page">
+<div class="inner">
+		      <div class="intro">
+		        <h2>Work&nbsp; <a href="#">Web</a><img src="images/slash2.png" alt="slash"><a href="#">Print</a></h2>
+      </div>
+
+	  <div class="section main">
+
+      
+<ol>
+				<li class="figure" style="background-color:#c63133">
+					<a href="#"><img src="images/spacer.gif" alt=""></a></li><!-- /end .figure -->
+				<li class="figure" style="background-color:#b22e43">
+					<a href="#"><img src="images/spacer.gif" alt=""></a>
+		</li><!-- /end .figure -->
+				<li class="figure">
+					<a href="#">
+					<img src="images/spacer.gif" alt=""></a>
+		</li><!-- /end .figure -->
+				<li class="figure" style="background-color:#b22e43">
+					<a href="#">
+					<img src="images/orsini1.jpg" alt=""></a>
+		</li><!-- /end .figure -->
+		<li class="figure">
+			<a href="#">
+			<img src="images/resist1.jpg" alt=""></a>
+		  </li><!-- /end .figure -->
+		        <li class="figure">
+					<a href="#"><img src="images/webwork3.png"></a></li><!-- /end .figure -->
+				<li class="figure" style="background-color:#b22e43">
+					<a href="#">
+					<img src="images/pane.jpg" alt=""></a>
+					</a>
+		</li><!-- /end .figure -->
+        
+        <li class="figure"><a href="#">
+			<img src="images/spacer.gif" alt=""></a></li><!-- /end .figure -->
+				<li class="figure">
+					<a href="#">
+					<img src="images/spacer.gif" alt=""></a>
+		</li><!-- /end .figure -->
+				<li class="figure" style="background-color:#b22e43">
+					<a href="#">
+					<img src="images/placeholder.jpg" alt=""></a>
+</li><!-- /end .figure -->
+				<li class="figure">
+					<a href="#">
+					<img src="images/spacer.gif" alt=""></a>
+			  </li><!-- /end .figure -->
+	
+    			<li class="figure">
+					<a href="#">
+					<img src="images/istc.jpg" alt=""></a>
+			  </li><!-- /end .figure -->
+
+  		</ol>
+  </div><!-- /end .section.main -->
+<div class="footer"><span style="color:#000">About</span> &nbsp;<a href="#">CV</a><img src="images/slash.png" alt="slash"><a href="#">Contact</a><img src="images/slash.png" alt="slash"><a href="#">Social</a> 
+    </div><!-- /end .footer -->
+  </div><!-- /end .inner -->
+</div><!-- /end #page -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-356177-8']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+[if lte IE 7]><script type="text/javascript" src="site/imgSizer.js"></script>
+<script type="text/javascript">
+window.onload = function() {
+	imgSizer.collate();
+}
+</script><![endif]
+
+[if lte IE 6]><script type="text/javascript" src="share/ddpng.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('body, #page, h1, h1 img, ul.nav, ul.nav a, .main h2, .main h2 b, .footer');
+</script><![endif]
+
+
+
+</body></html>
